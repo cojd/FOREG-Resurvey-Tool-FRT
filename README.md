@@ -1,10 +1,13 @@
-**Forests of Oregon Elevational Gradient (FOREG) Understory Resurvey Tool (VMT)**
+**Forests of Oregon Elevational Gradient (FOREG) Resurvey Tool (FRT)**
 
-This ODK-X Application is designed to run on Android tablets and is specialized to the understory plant resurvey protocols at the Andrews Forest. Application developed by Cole Doolittle based on the 'MAPP' software first developed by Sergei Poliakov & Joseph Landreville in coordination with Rob Pabst at Oregon State University. 
+This ODK-X Application is designed to run on Android tablets and is specialized to the ForestGEO resurvey protocols at the Andrews Forest (FOREG project). Application developed by Cole Doolittle based on the 'MAPP' software first developed by Sergei Poliakov & Joseph Landreville in coordination with Rob Pabst at Oregon State University. 
 
+This application is provided under an open source license. For inquiries about use please contact Cole Doolittle (cole.doolittle7 at gmail.com)
 ----
 **Application Architecture:**
   
+![ODK-X Schema](https://github.com/user-attachments/assets/d4f5b80c-e35e-4af5-a72c-7901eb23f84f)
+
 The primary code for this application is contained within the 'app/config' folder. All other application components are structural to ODK-X applications or are used in generic ODK-X example applications. The 'app/config' folder can be transplanted into a fresh ODK-X application (downloadable [here](https://docs.odk-x.org/app-designer-intro/)), although this should be unecessary (described in detail in _"Downloading and Installing Software on New Tablets"_). This section describes the application architecture within the 'app/config' folder. Not every file is highlighted, only those necessary to understanding, operating, and troubleshooting the application. For additional information, please refer to the ODK-X documentation ([here](https://docs.odk-x.org/)) and the MAPP repository ([here](https://github.com/RobPabst/MAPP)).
 
 | File location        | Description                                                                                                                                                 |
