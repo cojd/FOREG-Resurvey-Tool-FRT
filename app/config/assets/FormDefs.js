@@ -1661,6 +1661,83 @@ const FORM_DEFS = {
         ], // sections
       },
       {
+              id: 'post_fire_survey',
+              header: 'Post fire survey (click to expand)',
+              collapsable: true,
+              collapsed: true,
+              sections: [
+                {
+                  inputs: [
+                    {
+                      id: 'crown_scorch_m',
+                      column_name: 'crown_scorch',
+                      label: 'Crown Scorch (%)',
+                      html_element: 'input',
+                      html_attributes: {
+                        type: 'number',
+                        min: 0,
+                        max: 100,
+                        step: 1,
+                      },
+                      invalid_feedback: 'Crown scorch must be within the range 0-100.',
+                    },
+                    {
+                      id: 'char_upslope_m',
+                      column_name: 'char_upslope',
+                      label: 'Char Upslope',
+                      html_element: 'input',
+                      html_attributes: {
+                        type: 'number',
+                        min: 0,
+                        max: 3,
+                        step: 0.1,
+                      },
+                      invalid_feedback: 'Char upslope must be within the range 0-3.',
+                    },
+                    {
+                      id: 'char_sideslope1_m',
+                      column_name: 'char_sideslope1',
+                      label: 'Char Sideslope 1',
+                      html_element: 'input',
+                      html_attributes: {
+                        type: 'number',
+                        min: 0,
+                        max: 3,
+                        step: 0.1,
+                      },
+                      invalid_feedback: 'Char sideslope 1 must be within the range 0-3.',
+                    },
+                    {
+                      id: 'char_sideslope2_m',
+                      column_name: 'char_sideslope2',
+                      label: 'Char Sideslope 2',
+                      html_element: 'input',
+                      html_attributes: {
+                        type: 'number',
+                        min: 0,
+                        max: 3,
+                        step: 0.1,
+                      },
+                      invalid_feedback: 'Char sideslope 2 must be within the range 0-3.',
+                    },
+                    {
+                      id: 'char_downslope_m',
+                      column_name: 'char_downslope',
+                      label: 'Char Downslope',
+                      html_element: 'input',
+                      html_attributes: {
+                        type: 'number',
+                        min: 0,
+                        max: 3,
+                        step: 0.1,
+                      },
+                      invalid_feedback: 'Char downslope must be within the range 0-3.',
+                    },
+                  ],// inputs
+                },
+              ],// sections
+            },
+      {
         id: 'conditions',
         header: 'Conditions',
         sections: [
