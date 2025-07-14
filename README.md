@@ -33,12 +33,29 @@ The following are required to interact with and operate the tablets from a Windo
 5. [Android Debug Bridge (ADB)](https://developer.android.com/studio/releases/platform-tools)
 
 ----
-**Seeding Software Updates to New Tablets**
-
-----
 **Downloading and Installing Software on New Tablets**
 
-Without a tablet set up to 'seed' the other tablets, a full install is required. This is a involved process and should not be attempted if another tablet already has the software intealled. 
+To set up a brand-new server with a brand-new application a full install is required. This is a involved process and should not be attempted if another tablet already has the desired software installed. 
+
+1. You will need to install the following apps on your Android Device.
+
+   - ODK-X tables
+   - ODK-X services
+
+https://docs.odk-x.org/basics-install/
+
+2. Download this repository and navigate to /FOREG-Rresurvey-Tool-FRT/config/app in a terminal window
+3. Enable Developer options on your Android Device
+4. Connect Android Device to computer
+5. Run the following command within a terminal window: grunt adbpush
+6. On your Android Device, open the previously installed ODK-X tables app
+7. In the top right corner select the Preferences tab
+8. Press the Reset Configuration Button
+9. Go back to the home menu of the application, you can now use the app.
+10. Follow instructions in _Syncing To Docker Server_
+----
+**Seeding Software Updates to New Tablets**
+
 
 ----
 **Updating Tablets Prior to Field Season**
@@ -108,6 +125,17 @@ In command prompt, type to open server: docker stack deploy -c docker-compose.ym
 _Note: Docker desktop UI does not need to remain open for the server to run_
 
 In command prompt, type to close server: docker stack rm syncldap
+
+----
+**Syncing to Docker Server**
+
+1. Connect the Android device with the application loaded to Marquette's VPN.
+2. In ODK Tables, navigate to settings and enable admin restrictions by setting an admin password.
+3. Go to the new "Manage ability to change server settings" screen and enable "unsafe/unsecure Authentication".
+4. In "server settings" set the server url to http://field.forestry.oregonstate.edu/
+5. Get to the sync screen and click change user. (Easiest way to get there is by clicking the icon of two arrows in a circle from the top bar in the landing page in Tables.)
+6. Use login information provided by lab. If setting up server for the first time, enter the admin login information.
+7. Click "sync now". Or, if resetting server or setting up for the first time with an admin login, click "rest app server". 
 
 ----
 **Tips on Troublsehooting**
